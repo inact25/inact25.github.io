@@ -319,7 +319,7 @@ textarea:hover {
 }
 @media screen and (max-width: 565px){
     #contact input, textarea {
-        width: 370px;
+        width: 335px;
     }
     #contact {
         text-align:center;
