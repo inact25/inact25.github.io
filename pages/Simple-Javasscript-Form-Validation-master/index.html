@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+          integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+</head>
+<body>
+<section class="main">
+    <div class="container vlavlav-container">
+        <div class="row justify-content-md-center mt-5 vlavalv-form-container">
+            <div class="col-6 align-self-center">
+                <div class=" vlavalv-form-images text-center">
+                    <img src="assets/img/bgLogin.svg" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-lg-6 align-self-center col-sm-12">
+                <div class="card vlavalv-form-data">
+                    <div class="card-body">
+                        <div class=" vlavalv-form-logo text-center">
+                            <img src="assets/img/bgLogin.svg" alt="" class="img-fluid">
+                        </div>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input oninput="nameHandler(event)" type="text" class="form-control form-control-lg"
+                                   id="name"
+                                   placeholder="what is your name ?">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input oninput="emailHandler(event)" type="email" class="form-control form-control-lg"
+                                   id="email"
+                                   placeholder="yours@example.com">
+                            <div class="icons">
+                                <i style="display: none" class="fa fa-check-circle"></i>
+                                <i style="display: none" class="fa fa-times-circle"></i>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input oninput="phoneHandler(event)" type="text" class="form-control form-control-lg"
+                                   id="phone"
+                                   placeholder="phone number">
+                            <div class="icons">
+                                <i style="display: none" class="fa fa-check-circle"></i>
+                                <i style="display: none" class="fa fa-times-circle"></i>
+                            </div>
+                        </div>
+                        <div class="row ml-3">
+                            <div class="col-12">
+                                <p>Gender :</p>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-check px-0">
+                                    <input class="gender" oninput="genderHandler(event)" type="radio" name="gender"
+                                           id="male">
+                                    <label class="form-check-label form-check-label-lg" for="male">
+                                        Male
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-check px-0">
+                                    <input oninput="nameHandler(event)" class="gender" type="radio" name="gender"
+                                           id="female">
+                                    <label class="form-check-label form-check-label-lg" for="female">
+                                        Female
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-check px-0">
+                                    <input class="gender" type="radio" name="gender" id="other">
+                                    <label class="form-check-label form-check-label-lg" for="other">
+                                        Other
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check mt-3 vlavalv-agrement">
+                                    <input oninput="agreementHandler(event)"
+                                           class="form-check-input form-check-input-lg" type="checkbox" value=""
+                                           id="flexCheckDefault">
+                                    <p class="form-check-label">
+                                        I agree to the <a onclick="endUserAgreement()">end user agreement and
+                                        services</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="submit mt-3">
+                            <button class="btn btn-block btn-lg btn-primary rounded-pill" onclick="onSubmit(event)">
+                                Submit
+                            </button>
+                            <div class="icons">
+                                <i style="display: none" class="fa fa-circle-o-notch fa-spin load"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script src="assets/js/main.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"
+        integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

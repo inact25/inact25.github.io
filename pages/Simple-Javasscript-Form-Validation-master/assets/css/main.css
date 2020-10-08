@@ -1,0 +1,143 @@
+.vlavalv-form-container {
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    background: #3F3D56;
+}
+
+.vlavalv-form-images img {
+    max-width: 30rem;
+    margin: 0 auto;
+}
+
+.vlavalv-form-logo img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.vlavalv-form-data {
+    margin: 5%;
+    border: none !important;
+    border-radius: 1rem !important;
+
+}
+
+.vlavalv-form-data input {
+    border-radius: 10rem;
+    height: 4rem;
+}
+
+.vlavalv-form-data input[type=radio] {
+    width: 1.25rem;
+    height: 1.25rem;
+    background: #F50057;
+}
+
+.vlavalv-form-data input[type=checkbox] {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+
+.vlavalv-form-data .form-check-input:checked {
+    background-color: limegreen;
+    border: none;
+}
+
+.vlavalv-form-data input[type=text], .vlavalv-form-data input[type=email] {
+    padding-left: 5%;
+}
+
+.vlavalv-form-data label {
+    margin-left: 5%;
+}
+
+.vlavalv-form-data button {
+    height: 4rem;
+    background: #3F3D56;
+    border: none;
+}
+
+.vlavalv-form-data button:hover {
+    background: #F50057 !important;
+}
+
+.vlavalv-agrement a {
+    color: #3F3D56;
+    font-weight: bold;
+    cursor: pointer;
+}
+.vlavalv-form-data input[type=email].mailValid ~ .icons .fa-check-circle {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.7);
+    display: unset !important;
+    color: limegreen;
+}
+
+.vlavalv-form-data input[type=email].mailInValid ~ .icons .fa-times-circle {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.7);
+    display: unset !important;
+    color: #F50057;
+}
+
+.vlavalv-form-data input[type=text].phoneValid ~ .icons .fa-check-circle {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.7);
+    display: unset !important;
+    color: limegreen;
+}
+
+.vlavalv-form-data input[type=text].phoneInValid ~ .icons .fa-times-circle {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.7);
+    display: unset !important;
+    color: #F50057;
+}
+.vlavalv-form-data button.disabled {
+    background: #650728;
+}
+.vlavalv-form-data button.disabled ~ .icons .fa-circle-o-notch {
+    display: inline-block !important;
+    transform: scale(1.7);
+    opacity: 1;
+    visibility: visible;
+    color: white;
+}
+
+@media only screen and (max-width: 795px) {
+    .vlavalv-form-images img {
+        display: none;
+    }
+
+    .vlavalv-form-data .form-check-input:checked {
+        background-color: #3F3D56;
+        border: none;
+    }
+}
+
+@media only screen and (min-width: 795px) {
+    .vlavalv-form-logo img {
+        display: none;
+    }
+}
+
+.swal2-icon.swal2-info {
+    border-color: #F50057 !important;
+    color: #F50057 !important;
+}
+
+.swal2-styled.swal2-confirm {
+    background-color: #F50057 !important;
+}
+.icons {
+    display: flex;
+    position: absolute;
+    margin-top: -2.4rem;
+    right: 2.5rem;
+}
