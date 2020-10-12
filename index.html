@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+
     <title>Hi... Im angga</title>
     <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
           integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" rel="stylesheet">
@@ -10,8 +11,18 @@
     <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
           integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" rel="stylesheet">
     <link href="/manifest.webmanifest" rel="manifest">
+    <script
+            crossorigin="anonymous"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 </head>
-<body data-offset="600" data-spy="scroll" data-target="#left-aside" tabindex="0">
+<body data-offset="100" data-spy="scroll" data-target="#left-aside" onload="webLoad()" tabindex="0">
+<div class="preloader">
+    <div class="loading">
+        <div><img alt="preloader" height="200" src="assets/img/loader.gif" style="transform: scale(1);
+	animation: pulse 2s infinite;"></div>
+    </div>
+</div>
 <div class="container" id="wrapper">
     <aside class="left float-left shadow-dark card p-5 navigation" id="left-aside">
         <div class="header-inner d-flex align-items-start flex-column">
@@ -600,6 +611,8 @@
                                 <h2>Get in touch</h2>
                             </div>
                             <div class="divider"></div>
+                            <p>wanna take a break and drink coffee together while talking an idea ?, let's talk
+                                together</p>
                             <form action="mailto:anggas25@live.com" enctype="text/plain" method="post">
                                 <div class="row">
                                     <div class="col-md-6 col-12">
@@ -653,10 +666,10 @@
 <script crossorigin="anonymous"
         integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD"
         src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"></script>
-<script
-        crossorigin="anonymous"
-        integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM="
-        src="https://code.jquery.com/jquery-3.5.1.slim.js"></script>
+<!--<script-->
+<!--        crossorigin="anonymous"-->
+<!--        integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM="-->
+<!--        src="https://code.jquery.com/jquery-3.5.1.slim.js"></script>-->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <script src="assets/js/main.js"></script>
 </body>

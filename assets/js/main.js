@@ -1,3 +1,12 @@
+function webLoad() {
+    history.pushState('', '', window.location.pathname);
+    $(this).scrollTop(0);
+}
+
+$(document).ready(function () {
+    jQuery(".preloader").fadeOut("slow");
+});
+
 function offsetAnchor() {
     if (location.hash.length !== 0) {
         window.scrollTo(window.scrollX, window.scrollY - 50);
@@ -10,7 +19,6 @@ $(document).on('click', 'a[href^="#"]', function (event) {
     }, 0);
 });
 
-window.setTimeout(offsetAnchor, 0);
 
 function navMenu() {
     Swal.fire({
@@ -82,3 +90,4 @@ function navMenu() {
     })
 
 }
+
