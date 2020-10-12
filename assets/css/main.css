@@ -338,7 +338,7 @@ aside .vertical-menu li a.active:after, .mobile-menu .vertical-menu li a.active:
 
 /*MAIN*/
 .main {
-    max-width: 53rem;
+    max-width: 75%;
 }
 
 /*FOOTER*/
