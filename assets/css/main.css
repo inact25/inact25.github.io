@@ -127,8 +127,15 @@ i.fa.fa-users {
     transition: all 0.3s ease-in-out;
 }
 
+.header-inner img {
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
 
-aside .vertical-menu li a {
+}
+
+
+aside .vertical-menu li a, .mobile-menu .vertical-menu li a {
     margin-left: 0;
     padding: 0;
     -webkit-transition: all 0.3s ease-in-out;
@@ -139,27 +146,27 @@ aside .vertical-menu li a {
 
 }
 
-aside .site-title {
+aside .site-title, .mobile-menu .site-title {
     display: block;
     font-size: 25px;
     font-weight: 700;
 }
 
-aside .site-slogan {
+aside .site-slogan, .mobile-menu .social-slogan {
     font-size: 12px;
     text-transform: uppercase;
 }
 
-aside.left nav {
+aside.left nav, .mobile-menu.left nav {
     margin-top: 40px;
 }
 
-aside a {
+aside a, .mobile-menu a {
     text-decoration: none;
     color: white;
 }
 
-aside .vertical-menu {
+aside .vertical-menu, .mobile-menu .vertical-menu {
     font-size: 14px;
     font-family: "Poppins", sans-serif;
     list-style: none;
@@ -168,7 +175,7 @@ aside .vertical-menu {
     text-decoration: none;
 }
 
-aside .vertical-menu i {
+aside .vertical-menu i, .mobile-menu .vertical-menu i {
     width: 2rem;
     margin-right: 2px;
     font-size: 20px;
@@ -181,7 +188,11 @@ aside .vertical-menu li:hover {
     margin-left: 16px;
 }
 
-aside .vertical-menu li a.active:after {
+.mobile-menu .vertical-menu li:hover {
+    margin-left: 16px;
+}
+
+aside .vertical-menu li a.active:after, .mobile-menu .vertical-menu li a.active:after {
     content: "";
     background: #f0f2ff;
     padding-left: 4rem;
@@ -200,6 +211,32 @@ aside .vertical-menu li a.active:after {
 
 .nav {
     display: unset !important;
+}
+
+.swal2-modal {
+    border-radius: 1rem !important;
+    max-width: 18rem !important;
+    /*bottom: 3rem !important;*/
+    background: #6C5DD3 !important;
+
+}
+
+.swal2-container.swal2-backdrop-show, .swal2-container.swal2-noanimation {
+    background: transparent !important;
+}
+
+.swal2-content {
+    padding: 0 1em !important;
+    text-align: unset !important;
+}
+
+.mobile-menu .site-slogan {
+    font-size: 0.8em !important;
+    color: white !important;
+}
+
+.mobile-menu .copyright {
+    color: white;
 }
 
 /*HERO*/
