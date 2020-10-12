@@ -75,9 +75,10 @@ function navMenu() {
         </div>
     `,
         position: 'bottom-end',
-        showCloseButton: false,
+        showCloseButton: true,
         showCancelButton: false,
         showConfirmButton: false,
+        focusConfirm: false,
     })
 
 }
