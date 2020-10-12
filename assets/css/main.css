@@ -24,6 +24,7 @@
     .main {
         float: unset !important;
         margin: auto !important;
+        max-width: 100% !important;
     }
 }
 
