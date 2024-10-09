@@ -26,10 +26,6 @@
   ],
   "socialLinks": [
     {
-      "name": "twitter",
-      "url": "https://twitter.com/elonmusk"
-    },
-    {
       "name": "instagram",
       "url": "https://www.instagram.com/elonmusk/"
     },
@@ -37,14 +33,6 @@
       "name": "youtube",
       "url": "https://www.youtube.com/@SpaceX"
     },
-    {
-      "name": "website",
-      "url": "http://x.com/"
-    },
-    {
-      "name": "mail",
-      "url": "mailto:elon@tesla.com"
-    }
   ],
   "customize": {
     "fontFamily": "Kalam",
